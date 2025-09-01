@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Para você ❤️</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 100px;
+      background: #ffeaea;
+    }
+    h1 {
+      color: #d6336c;
+    }
+    button {
+      font-size: 18px;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .sim {
+      background-color: #4CAF50;
+      color: white;
+    }
+    .nao {
+      background-color: #f44336;
+      color: white;
+    }
+    #resposta {
+      display: none;
+      margin-top: 20px;
+    }
+    #resposta img {
+      max-width: 300px;
+      border-radius: 10px;
+    }
+    #resposta p {
+      font-size: 22px;
+      color: #d6336c;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Você aceita ser a mulher da minha vida?</h1>
+  <button class="sim" onclick="mostrarResposta()">SIM</button>
+  <button class="nao" onclick="sumirNao(this)">NÃO</button>
+
+  <div id="resposta">
+    <img src="foto.jpg" alt="eu te amo">
+    <p>Eu te amo ❤️</p>
+  </div>
+
+  <script>
+    function sumirNao(botao) {
+      botao.style.display = "none";
+    }
+    function mostrarResposta() {
+      document.getElementById("resposta").style.display = "block";
+    }
+  </script>
+</body>
+</html>
